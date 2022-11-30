@@ -32,7 +32,7 @@ $(function(){
 		var li = 0, nl = numLayouts, la;
 		for(li;li<nl;li++) {
 			la = in5.layouts[li];
-			$titem = $('<div data-index="'+th+'" class="viewer-page-thumb"><img class=" '+la.class+'" title="page '+th+'" alt="page '+th+'" src="/images/pagethumb_'+((th*.0001).toFixed(4).substr(2)+'_'+li)+'.jpg"/></div>'); 
+			$titem = $('<div data-index="'+th+'" class="viewer-page-thumb"><img class=" '+la.class+'" title="page '+th+'" alt="page '+th+'" src="https://loka1.github.io/ntm/images/pagethumb_'+((th*.0001).toFixed(4).substr(2)+'_'+li)+'.jpg"/></div>'); 
 			$titem[0].pageIndex = th;
 			$titem.on(clickEv,function(e){if(!beenDragged){nav.to(this.pageIndex); togglePageThumbs();} });
 			$vthumbs.append($titem);
